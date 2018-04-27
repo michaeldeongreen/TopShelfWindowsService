@@ -28,7 +28,8 @@ namespace TopShelfWindowsService.Services
             if (!Directory.Exists(_path))
                 Directory.CreateDirectory(_path);
 
-            IList<Movie> movies = new List<Movie>() { new Movie() { Name = "The Mack", ReleaseDate = DateTime.Now }, new Movie() { Name = "Hell Up in Harlem", ReleaseDate = DateTime.Now } };
+            IList<Movie> movies = new List<Movie>() { new Movie() { Name = "The Mack", ReleaseDate = DateTime.Now }, new Movie() { Name = "Hell Up in Harlem", ReleaseDate = DateTime.Now },
+            new Movie() { Name = "Black Coffee", ReleaseDate = DateTime.Now }};
             FileService fileService = new FileService();
             for (int i = 1; i <= 5; i++)
             {
