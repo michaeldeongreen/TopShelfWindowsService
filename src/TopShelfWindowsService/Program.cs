@@ -20,7 +20,8 @@ namespace TopShelfWindowsService
                     s.WhenStarted(tc => tc.Start());                        
                     s.WhenStopped(tc => tc.Stop());                         
                 });
-                x.RunAsLocalSystem();                                       
+                x.RunAsLocalSystem();
+                x.StartAutomatically();
 
                 x.SetDescription("Sample Topshelf Host");                   
                 x.SetDisplayName("TopshelfWindowsService");                                  
